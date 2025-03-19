@@ -6,8 +6,6 @@ const PORT = 8090;
 app.use(express.json());
 
 
-
-
 // Basic route
 app.get('/', (req, res) => {
     res.json({
