@@ -20,6 +20,6 @@ jobs:
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 
     - name: Build the Docker Pipeline
-      run: docker build -t cicd
+      run: docker build -t cicd .
     - name: Push to Dockerhub
       run: docker push imilindmishra/cicd:latest
